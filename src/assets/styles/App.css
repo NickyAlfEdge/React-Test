@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script');
+
+.App {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.paper-card-container {
+  width: 80vw;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}

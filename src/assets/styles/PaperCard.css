@@ -1,0 +1,119 @@
+.paper-card {
+  height: fit-content;
+  min-width: 1200px;
+  font-family: 'Dancing Script', cursive;
+  padding-top: 36px;
+  background: white;
+}
+
+.paper-card-header {
+  text-align: left;
+  padding-left: 40px;
+  height: 36px;
+  line-height: 36px;
+  background: linear-gradient(
+   white, white 33px, white 35px, pink 36px
+  );
+}
+
+.paper-card-date {
+  text-align: left;
+  padding-left: 40px;
+  height: 36px;
+  line-height: 36px;
+  background: repeating-linear-gradient(
+    white, white 33px, white 35px, teal 36px
+  );
+}
+
+.paper-card-title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.paper-card-subheading {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.paper-card-content {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    white, white 33px, white 35px, teal 36px
+  );
+}
+
+.paper-card-img-container {
+  display: flex;
+  margin-bottom: auto;
+  margin-right: 40px;
+}
+
+.paper-card-img {
+  margin-left: 40px;
+  height: 100%; 
+  width: 100%;
+  min-width: 500px;
+  object-fit: contain
+}
+
+.paper-card-content-text {
+  margin: 0px 40px 0px 40px;
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.paper-card-content-text > p {
+  margin-top: 5px;
+}
+
+.paper-card-footer {
+  text-align: right;
+  padding-right: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  height: 36px;
+  line-height: 36px;
+  background: repeating-linear-gradient(
+    white, white 33px, white 35px, teal 36px
+  );
+}
+
+@media only screen and (max-width: 1300px) {
+  .paper-card {
+    min-width: 700px;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .paper-card {
+    min-width: 360px;
+  }
+
+  .paper-card-content {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .paper-card-img-container {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 28px;
+  }
+
+  .paper-card-img-container, 
+  .paper-card-img {
+    margin: 0;
+  }
+
+  .paper-card-img {
+    min-width: 300px;
+  }
+}
